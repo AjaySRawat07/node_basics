@@ -1,0 +1,36 @@
+        <!-- view.ejs -->
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <script>
+            document.getElementById("typeOfJoke").value = "programming";
+        </script>
+        <body>
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <h1 style="color:   rgb(55, 55, 208); border: solid black 10px; padding: 4px;">Joke of the Moment</h1>
+
+                <div>
+                    <select id="typeOfJoke">
+                        <option value="general" <%= data.type === "general" ? "selected" : "" %>>general</option>
+                        <option value="programming" <%= data.type === "programming" ? "selected" : "" %>>programming</option>
+                        <option value="knock-knock" <%= data.type === "knock-knock" ? "selected" : "" %>>knock-knock</option>
+                    </select>
+                </div>
+                <% if (data) { %>
+                    <% if (data.type === "programming") %>
+                    <h2  style="padding: 20px; margin: 10px; font: bold; border: solid black 1.5px; min-width: 400px; max-width: 400px;"><strong style="color: rgb(23, 126, 23);">Question : </strong> <%= data.setup %></h2>
+                <h2 style="padding: 20px; margin: 10px; font: bold;  border: solid black 1.5px; min-width: 400px; max-width: 400px;"><strong style="color: rgb(211, 60, 60);">Joke :  </strong> <%= data.punchline %></h2>
+
+                <button style="padding: 10px; margin: 5px; font-size: larger;" onclick="window.location.reload()" >Next Joke😂😂</button>
+                <% } else { %>
+                    <p>Sorry, Try again please </p>
+                <% } %>
+                </div>
+                
+            </body>
+        </html>

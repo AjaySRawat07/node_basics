@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image generator</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1>Let's generate some random image</h1>
+
+        <div>
+            <% if(data){ %>
+                <img src="<%= data %>" alt="random-image🚀"/>
+            <% } %>
+            
+        </div>
+        <button  onclick="window.location.reload()"  style="font-size: larger; margin-top: 10px;">Next</button>
+    </div>
+        
+</body>
+</html>

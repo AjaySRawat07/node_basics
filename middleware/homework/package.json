@@ -1,0 +1,14 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "middleware main uses",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "ajay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

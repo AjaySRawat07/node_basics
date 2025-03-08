@@ -1,0 +1,1 @@
+This package takes help us to find a number in a shorted array with minimum time 0(n); 🚀🚀
