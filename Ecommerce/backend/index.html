@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce</title>
+</head>
+<body>
+      <h1>Hello backend</h1>
+      <script>
+        fetch("http://localhost:5000/api/v1/product/list", {
+            headers : {
+                "Authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDE2NTkxMjYuNzQxLCJfaWQiOiI2N2NmMmJlMjM2NWVlMTFhZmRmNWU4YjYiLCJleHAiOjE3NDE4MzE5MjZ9.c4afKyl8PvEdOLhD1RIDJVZW8rJmmyTs7hVfm-rmqdc"
+            }
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err));
+      </script>
+</body>
+</html>
