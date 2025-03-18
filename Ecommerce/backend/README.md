@@ -1,4 +1,4 @@
-# eCommerce API
+# Ecommerce API
 
 ## Authentication
 
@@ -13,13 +13,13 @@
 ## Wishlist Routes
 
 ### Add to Wishlist
-**Endpoint:** `POST /api/v1/wishlist/add`
+**Endpoint:** `POST /api/v1/cart/add`
 
 ### Remove from Wishlist
-**Endpoint:** `DELETE /api/v1/wishlist/delete`
+**Endpoint:** `DELETE /api/v1/cart/delete`
 
 ### Get Wishlist
-**Endpoint:** `GET /api/v1/wishlist/list`
+**Endpoint:** `GET /api/v1/cart/list`
 
 ---
 
@@ -49,7 +49,7 @@
 ## Coupon Routes
 
 ### Create Coupon
-**Endpoint:** `POST /coupon/create`
+**Endpoint:** `POST /coupon/applyCoupon`
 
 ### Get Coupon
 **Endpoint:** `GET /coupon/get`
